@@ -27,7 +27,6 @@
 #include "shruthi/system_settings.h"
 #include "shruthi/voice.h"
 #include "shruthi/voice_allocator.h"
-#include "shruthi/parameter.h"
 
 namespace shruthi {
 
@@ -212,7 +211,7 @@ class Part {
   static uint16_t Tune(uint8_t note);
   static uint8_t step_duration();
    
-  static uint8_t data_access_byte_[kNumParameters+1];
+  static uint8_t data_access_byte_[1];
   static Patch patch_;
   static SequencerSettings sequencer_settings_;
   static SystemSettings system_settings_;
